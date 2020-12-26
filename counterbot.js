@@ -23,8 +23,8 @@ client.on("ready", () => {
 // Register an event to handle incoming messages
 client.on("message", async (msg) => {
   // Check if the message starts with '!hello' and respond with 'world!' if it does.
-  msg.channel.send("Estou contando! 😏");
   if (msg.content.startsWith("!startcounting")) {
+    msg.channel.send("Estou contando! 😏");
     console.log("started counting");
     var interval = setInterval(function () {
       msg.channel.send("🗓 Tabelinha do Fermix falando mal da Zelda 💖💜");
