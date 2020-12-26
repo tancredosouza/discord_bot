@@ -33,11 +33,6 @@ client.on("message", async (msg) => {
       count = count + 1;
       record = Math.max(record, count);
     }, 86400 * 1000);
-
-    var intervalTwo = setInterval(function () {
-      console.log("counting");
-      console.log(count);
-    }, 1000);
   }
 
   if (msg.content.startsWith("!fermixXingou")) {
